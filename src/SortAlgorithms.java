@@ -81,7 +81,7 @@ public class SortAlgorithms {
         }
     }
 
-    public static void merge(int[] arr, int low, int mid, int high) {
+    private static void merge(int[] arr, int low, int mid, int high) {
 
         // Initialize temp to store sorted elements
         List<Integer> temp = new ArrayList<>();
@@ -189,7 +189,7 @@ public class SortAlgorithms {
         recursiveInsertionSort(arr, i + 1);
     }
 
-    public static int partition(int[] arr, int low, int high) {
+    private static int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
         int i = low - 1;
 
